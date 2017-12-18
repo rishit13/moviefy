@@ -1,6 +1,6 @@
-# moviefy
+# Moviefy
 A Machine Learning project on recommendation of movies based on the mood of the user
-# libraries required
+# Libraries required
 open cv
 dlib
 windows visual studio 2017
@@ -17,7 +17,7 @@ The CK+ dataset has been used for training this model, link : http://www.consort
 # Note:
 While installing the dlib on reaching the bootstrap.bat , work these commands on a different command prompt called 64X naive command prompt and after the unpacking the python libraries for the dlib just type pip install < dlib extension >
 extension:- dlib-18.17.100-cp27-none-win_amd64.whl(google it and get the file )
-# Procedure fot this project
+# Procedure for this project
 First we clean the data  that we have as it is a dirty one 
 Reduced the movies from 5000 to 600(based on user ratings ), this was done in R
 Then train the model an nd store the weights
