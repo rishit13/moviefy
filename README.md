@@ -16,7 +16,7 @@ Download the dlib predictor that has been used in the project from : http://dlib
 
 The CK+ dataset has been used for training this model, link : http://www.consortium.ri.cmu.edu/ckagree/
 # Note:
-While installing the dlib on reaching the bootstrap.bat , work these commands on a different command prompt called 64X naive command prompt and after the unpacking the python libraries for the dlib just type pip install < dlib extension >,
+While installing the dlib on reaching the bootstrap.bat , work these commands on a different command prompt called 64X naive command prompt and after unpacking the python libraries for the dlib just type pip install < dlib extension >,
 extension:- dlib-18.17.100-cp27-none-win_amd64.whl(google it and get the file )
 # Procedure for this project
 First we clean the data  that we have as it is a dirty one.
