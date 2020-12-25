@@ -1,1 +1,1 @@
-puthon3.7.9
+python-3.7.9
