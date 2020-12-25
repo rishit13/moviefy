@@ -11,6 +11,7 @@ from tkinter import *
 # In[45]:
 
 
+
 def generate_list(emo, df_new):
     emo_list = df_new[df_new['emotion']  == emo]
     emo_list = emo_list['title'].tolist()
