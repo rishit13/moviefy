@@ -17,7 +17,7 @@ def home():
 @app.route('/recommend', methods = ['POST'])
 
 def recommend():
-    return capture()
-    
+    recommendations =  capture()
+    return render_template('index.html', predictions_text = recommendations)
 if __name__ == '__main__':
      app.run(debug = True)

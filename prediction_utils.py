@@ -8,11 +8,10 @@ Created on Thu Dec 24 12:33:08 2020
 from tensorflow.keras.applications import VGG16
 from tensorflow.keras.preprocessing import image
 import pandas as pd 
-from GUI_utils import generate_list
 import cv2
 import numpy as np
 from emotion_model import model
-
+import random
 
 EMOTION_DICT = {1:"neutral", 2:"angry", 3:"happy", 4:"sad", 5:"surprise", 6:"fear", 7:"disgust"}
 model_VGG = VGG16(weights='imagenet', include_top=False)
@@ -50,7 +49,6 @@ def rerun(text, cap):
     cv2.putText(img, "Hold Q: To Quit", (460,470), font, 0.4, (255, 0, 0), 2, cv2.LINE_AA)
     cv2.putText(img,"Press C to recommend movies", (5, 400), font, 0.7, (255,0,0), 2, cv2.LINE_AA)
     cv2.imshow("Image", img)
-
     if cv2.waitKey(1) == ord(' '):
             cv2.imwrite("test.jpg", img)
             path = r'./test.jpg'
@@ -65,5 +63,11 @@ def rerun(text, cap):
         cap.release()
         cv2.destroyAllWindows()
         if(text == 'happy' or text == 'sad' or text == 'angry'):
-            generate_list(text,df_new)
+            emo_list = df_new[df_new['emotion']  == text]
+            emo_list = emo_list['title'].tolist()
+            sampling_1 = random.choices(emo_list, k=4)
+            with open('./recom_file.txt','w') as file:
+                for i in sampling_1:
+                    file.write('%s\n' % i)
         break
+  
