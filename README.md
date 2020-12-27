@@ -15,7 +15,7 @@ This project has been implimented in python (version3.7.6) which uses the deep-l
 1) You could visit https://em-exp-recommender.herokuapp.com/ (it might take some time to load up the application).
 
 2) Download the **local_web_app**folder. If you are using an anaconda environment launch the anaconda cmd prompt and go to this specific folder and run ```python app.py```.
-  ![Locally hosted webapp image](./Emotion_test.png)
+ 
   
 # Overview
 
