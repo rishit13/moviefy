@@ -2,9 +2,9 @@
 
 Moviefy is an end to end machine learning project where movies are recommended to a user based on their expression of happy, sad or angry. This project has been deployed using Flask framework on Heroku cloud platform. There are two different version of this web-app; one which runs locally with and interactive dynamic interface of detecting emotions and recommending movies anf the other web app is hosted on heroku where you would have to select an image of a facial expression and the movie recommendations will be generated. 
 
-The python production files ending with  <b>_1<b> are the files that are being used int the Heroku production environment. 
+The python production files ending with  ```_1``` are the files that are being used int the Heroku production environment. 
   
-The locally deployed version is present in a folder named <b> local_web_app <b>. 
+The locally deployed version is present in a folder named **local_web_app**. 
 
 # Prereqisites
 
@@ -14,7 +14,7 @@ This project has been implimented in python (version3.7.6) which uses the deep-l
 
 1) You could visit https://em-exp-recommender.herokuapp.com/ (it might take some time to load up the application).
 
-2) Download the <b>local_web_app<b> folder. If you are using an anaconda environment launch the anaconda cmd prompt and go to this specific folder and run <b> python app.py <b>.
+2) Download the **local_web_app**folder. If you are using an anaconda environment launch the anaconda cmd prompt and go to this specific folder and run ```python app.py```.
   ![Locally hosted webapp image](./Emotion_test.png)
   
 # Overview
@@ -33,7 +33,7 @@ Imdb movies dataset was utilised in order to train the classifier model. Movie g
 
 These movies were then encapsulated within a ```.csv``` file, which was utilised during the generation of the recommendations.
 
-<b>The model training notebooks are present in the model_train_notebooks folder <b> 
+**The model training notebooks are present in the model_train_notebooks folder** 
   
 ## Model Deployment Note 
 While deploying the project in the Heroku cloud environment you would need to take care of using buildpacks as you will encounder the follwing error :
@@ -54,9 +54,9 @@ Use the standered ``` git add .``` and ``` git commit ``` to successfully upload
 
 # References
 
-<b>Deployment<b> : https://youtu.be/mrExsjcvF4o
+**Deployment** : https://youtu.be/mrExsjcvF4o
   
-<b>Heroki Ligbl error<b> : https://stackoverflow.com/questions/63845382/importerror-libgl-so-1-error-when-accessing-heroku-app
+**Heroki Ligbl error** : https://stackoverflow.com/questions/63845382/importerror-libgl-so-1-error-when-accessing-heroku-app
   
-<b>Buildpack work-around<b> : https://youtu.be/Kl7mqpAK-bk
+**Buildpack work-around** : https://youtu.be/Kl7mqpAK-bk
 
