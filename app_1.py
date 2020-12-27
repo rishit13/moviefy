@@ -12,14 +12,14 @@ from flask import Flask, render_template, request, redirect,url_for
 from source_1 import capture_1
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
-app = Flask(__name__)
+app_1 = Flask(__name__)
 
 
-@app.route('/')
+@app_1.route('/')
 def home():
     return render_template('index.html')
 
-@app.route('/recommend', methods = ['GET', 'POST'])
+@app_1.route('/recommend', methods = ['GET', 'POST'])
 
 def recommend():
     filename = request.form["file_name"]
@@ -27,4 +27,4 @@ def recommend():
     recommendations =  capture_1(filepath)
     return render_template('index.html', predictions_text = recommendations)
 if __name__ == '__main__':
-     app.run(debug = True)
+     app_1.run(debug = True)
